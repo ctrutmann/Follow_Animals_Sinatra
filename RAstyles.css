@@ -1,3 +1,108 @@
 body {
   background: #8FBC8F;
 }
+
+div.title {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 1%;
+  background-color: #967272;
+}
+
+img#logo {
+  width: ;
+  margin-left: 2%;
+}
+
+div.title > h1 {
+  font-family: 'Cinzel', serif;
+  font-size: ;
+  text-shadow: 1px 1px #2F4F4F;
+}
+
+div.title > h2 {
+  font-family: 'Arapey', serif;
+  text-shadow: 1px 1px #2F4F4F;
+}
+
+div.title > h1, div.title > h2 {
+  font-weight: bold;
+  margin-left: 2%;
+  color: white;
+}
+
+nav.header {
+  background-color: #2F4F4F;
+  padding: 2%;
+  text-align: center;
+  margin-right: 0px;
+}
+
+nav > a {
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  border-left: 1px solid white;
+  padding: 2%;
+}
+
+nav > a:last-of-type {
+  border-right: 1px solid white;
+}
+
+main {
+  padding: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+section.home {
+  background: white;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  padding: 2%;
+  width: 18%;
+  margin-left: 2%;
+  text-align: center;
+  box-shadow: 3px 3px 1px #2F4F4F;
+}
+
+img.home {
+  height: 100px;
+  border: 2px solid #2F4F4F;
+  border-radius: 50%;
+}
+
+main.about {
+    background: white;
+}
+
+section.about {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+}
+
+img.about {
+  background: white;
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  margin-left: 5%;
+}
+
+footer {
+  background-color: #2F4F4F;
+  text-align: center;
+  padding: 2%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+footer > a {
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  padding: 10px;
+}
