@@ -1,0 +1,25 @@
+<!-- form for registering new user -->
+<div>
+  <form class="register_form" action="/users" method="POST">
+    <label for="first_name">First Name:</label>
+    <input type="text" name="user[first_name]">
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="user[last_name]">
+
+    <label for="email">Email:</label>
+    <input type="text" name="user[email]">
+
+    <label for="zip_code">Zip Code:</label>
+    <input type="text" name="user[zip_code]">
+
+    <label for="first_name">Password:</label>
+    <input type="password" name="user[password]">
+
+    <label for="first_name">Confirm Password:</label>
+    <input type="password" name="password_confirmation">
+
+    <input type="submit" name="Register">
+    <p>After successfully registering you will be redirected to the homepage to login.</p>
+  </form>
+</div>

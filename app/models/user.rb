@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
 
   validates :email, :hashed_password, :zip_code, presence: true
   validates :email, uniqueness: true
+  validate :password_confirmation_matches?
 
   include BCrypt
 
@@ -19,6 +20,10 @@ class User < ActiveRecord::Base
 
   def authenticate(login_password)
     self.password == login_password
+  end
+
+  def password_confirmation_matches?
+    @password == @password_confirmation
   end
 
 end
