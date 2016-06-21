@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   has_many :follower_animals, :foreign_key => :follower_id
   has_many :followed_animals, :through => :follower_animals, :source => :animal
 
-  validates :email, :hashed_password, presence: true
+  validates :email, :hashed_password, :zip_code, presence: true
   validates :email, uniqueness: true
 
   include BCrypt
