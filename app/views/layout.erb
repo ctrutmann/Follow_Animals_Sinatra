@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 
-    normalize.css removes cross-browser differences in defaults, e.g.,
-    differences in how form elements appear between Firefox and IE
-    See: http://necolas.github.com/normalize.css/
-  -->
   <link rel="stylesheet" href="/css/normalize.css">
-  <!--
-    application.css is where you put your styles
-  -->
   <link rel="stylesheet" href="/css/application.css">
 
+  <link rel="shortcut icon" href="animal_images/critterprint.png"/>
+  <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet' type='text/css'>
+
+  <title>Register Animals - About</title>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
   <title></title>
 </head>
 <body>
-  <%= yield %>
+  <header>
+    <img class="logo" src="animal_images/critterprint.png">
+    <div class="title">
+      <h1>Register Animals</h1>
+      <h2>A Social Network & Safety Net for Animals</h2>
+    </div>
+    <div class="extranav">
+      <a href="register.html">Sign In / Register</a>
+    </div>
+    <nav class="header">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="index.html">Your Stories</a>
+      <a href="index.html">Help Animals</a>
+      <a href="index.html">Magazine</a>
+      <a href="index.html">Contact</a>
+      <a href="index.html">Donate</a>
+    </nav>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+  <footer>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html">Jobs</a>
+    <a href="index.html">Donate</a>
+    <a href="index.html">Contact</a>
+  </footer>
 </body>
 </html>
