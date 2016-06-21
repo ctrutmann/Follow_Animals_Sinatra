@@ -5,7 +5,9 @@ end
 
 # create new user
 post '/users' do
-  @user = User.new(params[:user])
+  if
+    @user = User.new(params[:user])
+  end
 
   if @user.save
     redirect '/'
