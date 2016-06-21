@@ -132,6 +132,10 @@ footer > a {
   padding: 10px;
 }
 
+.register_form > input {
+  display: block;
+}
+
 @media screen and (max-width: 850px) {
   section.home {
     display: block;
