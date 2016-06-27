@@ -1,5 +1,5 @@
 body {
-  background: #8FBC8F;
+  background: #E8E8E8;
 }
 
 header {
@@ -99,7 +99,7 @@ form.login > input {
   border: 1px solid black;
 }
 
-main.about {
+.about {
     background: white;
 }
 
