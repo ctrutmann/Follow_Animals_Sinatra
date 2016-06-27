@@ -22,27 +22,34 @@
       <h2>A Social Network & Safety Net for Animals</h2>
     </div>
     <div class="extranav">
-      <a href="/sessions/login">Sign In</a> / <a href="/users/new">Register</a>
+      <% if logged_in? %>
+        <a href='users/<%= session[:user_id] %>'><%= current_user.email %></a> /
+        <a href='sessions/<%= session[:user_id] %>'>Logout</a>
+      <% else %>
+        <a href="/sessions/login">Sign In</a> /
+        <a href="/users/new">Register</a>
+      <% end %>
+
     </div>
     <nav class="header">
       <a href="/">Home</a>
-      <a href="about.html">About</a>
-      <a href="index.html">Your Stories</a>
-      <a href="index.html">Help Animals</a>
-      <a href="index.html">Magazine</a>
-      <a href="index.html">Contact</a>
-      <a href="index.html">Donate</a>
+      <a href="/">About</a>
+      <a href="/">Your Stories</a>
+      <a href="/">Help Animals</a>
+      <a href="/">Magazine</a>
+      <a href="/">Contact</a>
+      <a href="/">Donate</a>
     </nav>
   </header>
   <main>
     <%= yield %>
   </main>
   <footer>
-    <a href="home.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="index.html">Jobs</a>
-    <a href="index.html">Donate</a>
-    <a href="index.html">Contact</a>
+    <a href="/">Home</a>
+    <a href="/">About</a>
+    <a href="/">Jobs</a>
+    <a href="/">Donate</a>
+    <a href="/">Contact</a>
   </footer>
 </body>
 </html>
