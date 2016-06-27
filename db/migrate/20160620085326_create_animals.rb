@@ -8,7 +8,7 @@ class CreateAnimals < ActiveRecord::Migration
       t.integer :age
       t.integer :zip_code, presence: true
       t.boolean :needs_help, default: false
-      t.string :status_id, default: 1
+      t.integer :status_id, default: 1
       t.integer :guardian_id, presence: true
 
       t.timestamps
