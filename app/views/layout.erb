@@ -5,7 +5,6 @@
   <link rel="stylesheet" href="/css/application.css">
 
   <link rel="shortcut icon" href="/animal_images/critterprint.png"/>
-  <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet' type='text/css'>
 
   <title>Follow Animals - About</title>
@@ -22,7 +21,7 @@
     <div class="extranav">
       <% if logged_in? %>
         <a href='users/<%= session[:user_id] %>'><%= current_user.email %></a> /
-        <a href='sessions/<%= session[:user_id] %>'>Logout</a>
+        <a href='sessions/logout'>Logout</a>
       <% else %>
         <a href="/">Sign In</a> /
         <a href="/users/new">Register</a>
@@ -32,9 +31,9 @@
     <nav class="header">
       <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="/">Our Story</a>
       <a href="/">Your Stories</a>
       <a href="/">Help Animals</a>
-      <a href="/">Magazine</a>
       <a href="/">Contact</a>
       <a href="/">Donate</a>
     </nav>
