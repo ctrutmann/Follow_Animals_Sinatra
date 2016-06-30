@@ -49,6 +49,8 @@ div.title > h1, div.title > h2 {
   font-weight: bold;
   margin-left: 2%;
   color: white;
+  cursor: hand;
+  cursor: pointer;
 }
 
 nav.header {
