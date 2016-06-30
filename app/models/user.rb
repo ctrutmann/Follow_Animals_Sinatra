@@ -26,4 +26,8 @@ class User < ActiveRecord::Base
     @password == @password_confirmation
   end
 
+  def animals_in_need
+    self.followed_animals.where(needs_help: true)
+  end
+
 end
