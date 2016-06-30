@@ -11,7 +11,7 @@ post '/sessions' do
 end
 
 # logout user
-get '/sessions/:id' do
+get '/sessions/logout' do
   logout
   redirect '/'
 end

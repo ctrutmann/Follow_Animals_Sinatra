@@ -7,5 +7,3 @@ end
 get '/about' do
   erb :about
 end
-
-# Shows

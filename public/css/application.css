@@ -34,7 +34,7 @@ div.extranav > a {
 }
 
 div.title > h1 {
-  font-family: 'Cinzel', serif;
+  font-family: serif;
   letter-spacing: 2px;
   font-size: 250%;
   text-shadow: 1px 1px #2F4F4F;
@@ -49,6 +49,8 @@ div.title > h1, div.title > h2 {
   font-weight: bold;
   margin-left: 2%;
   color: white;
+  cursor: hand;
+  cursor: pointer;
 }
 
 nav.header {
@@ -147,4 +149,40 @@ footer > a {
 
 .required {
   color: red;
+}
+
+.your-animals {
+  border-top: 5px solid #2F4F4F;
+  padding: 1%;
+  text-align: center
+}
+
+.followed-animals {
+  border-top: 5px solid #2F4F4F;
+  padding: 1%;
+  text-align: center
+}
+
+div.animal {
+  background: white;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  padding: 2%;
+  width: 18%;
+  margin-left: 2%;
+  margin-top: 2%;
+  text-align: center;
+  box-shadow: 3px 3px 1px #2F4F4F;
+  cursor: pointer;
+}
+
+img.animal {
+  max-width: 100%;
+  border: 2px solid #2F4F4F;
+  border-radius: 50%;
+}
+
+.status {
+  font-weight: bold;
 }

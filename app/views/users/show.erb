@@ -5,17 +5,16 @@
     <input type='submit' value="Add Animal">
   </form>
 
-  <h2>Your Animals</h2>
-    <ul>
+  <section class="your-animals">
+    <h2>Your Animals</h2>
     <% @user.animals.each do |animal| %>
-      <li><%= animal.name %></li>
+    <%= erb :'animals/_animal', { layout: false, locals: {:animal => animal }} %>
     <% end %>
-    </ul>
-
-  <h2>Animals You Follow</h2>
-    <ul>
+  </section>
+  <section class="followed-animals">
+    <h2>Animals You Follow</h2>
       <% @user.followed_animals.each do |animal| %>
-        <li><%= animal.name %></li>
+      <%= erb :'animals/_animal', { layout: false, locals: {:animal => animal }} %>
       <% end %>
-    </ul>
+  </section>
 </div>
