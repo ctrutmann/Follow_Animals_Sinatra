@@ -7,7 +7,7 @@ array_of_statuses.each do |status|
 end
 
 # seed users
-array_of_users = [{first_name: "Christel", last_name: "Trutmann", email: "ctrutmann@gmail.com", zip_code: 14850, password: "*Wr1gh7!"}, {first_name: "Olivia", last_name: "Vebt", email: "ohv1@cornell.edu", zip_code: 14850, password: "ohv1"}, {first_name: "Ben", last_name: "Blakeley", email: "brblakeley@gmail.com", zip_code: 14850, password: "forsweetsmouse"}]
+array_of_users = [{first_name: "Christel", last_name: "Trutmann", email: "me@gmail.com", zip_code: 14850, password: "*Wr1gh7!"}, {first_name: "Olivia", last_name: "Vent", email: "o@cornell.edu", zip_code: 14850, password: "ohv1"}, {first_name: "Ben", last_name: "Blakeley", email: "ben@gmail.com", zip_code: 14850, password: "forsweetsmouse"}]
 
 array_of_users.each do |info|
   User.create(info)

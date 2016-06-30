@@ -21,18 +21,18 @@ post '/animals' do
 end
 
 # show animal's profile page
-get 'animals/:id' do
+get '/animals/:id' do
   @animal = Animal.find(params[:id])
   erb :'animals/show'
 end
 
 # show form for editing an animal's info
-get 'animals/:id/edit' do
+get '/animals/:id/edit' do
 
 end
 
 # update an animal's info
-put 'animals/:id' do
+put '/animals/:id' do
 
 end
 
