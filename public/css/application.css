@@ -101,9 +101,10 @@ form.login > input {
 
 .about {
     background: white;
+    padding: 1%;
 }
 
-section.about {
+article.about {
   display: inline-block;
   position: relative;
   width: 40%;
