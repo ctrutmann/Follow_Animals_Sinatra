@@ -3,7 +3,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :first_name
       t.string :last_name
-      t.string :email, presence: true, uniquness: true
+      t.string :email, presence: true, uniqueness: true
       t.string :hashed_password, presence: true
       t.integer :zip_code, presence: true
 

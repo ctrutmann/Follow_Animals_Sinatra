@@ -1,0 +1,35 @@
+<div class='new_animal'>
+  <% if @errors %>
+    <%= @errors %>
+  <% end %>
+  <form class="register_animal_form" action="/animals" method="POST">
+    <label for="name"><span class="required">*</span>Animal's Name:</label>
+    <input type="text" name="animal[name]">
+
+    <label for="name">Animal's Previous Names:</label>
+    <input type="text" name="animal[old_names]">
+
+    <label for="species"><span class="required">*</span>Animal's Species:</label>
+    <input type="text" name="animal[species]">
+
+    <label for="breed">Animal's Breed:</label>
+    <input type="text" name="animal[breed]">
+
+    <label for="age">Animal's Age:</label>
+    <input type="text" name="animal[age]">
+
+    <label for="zip_code"><span class="required">*</span>Animal's Zip Code:</label>
+    <input type="text" name="animal[zip_code]">
+
+    <label for="status">Animal's Status:</label>
+    <input type="radio" name="animal[status_id]" value="1">Grand<br>
+    <input type="radio" name="animal[status_id]" value="2">Needs Medical Assistance<br>
+    <input type="radio" name="animal[status_id]" value="3">Needs New Home<br>
+    <input type="radio" name="animal[status_id]" value="4">Needs Other Assitance<br>
+    <input type="radio" name="animal[status_id]" value="5">Deceased
+
+    <input type="hidden" name="animal[guardian_id]" value="<%= current_user.id %>">
+
+    <input type="submit" name="Register Animal">
+  </form>
+</div>

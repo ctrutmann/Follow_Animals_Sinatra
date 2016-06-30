@@ -132,9 +132,9 @@ footer > a {
   padding: 10px;
 }
 
-.register_form > input {
+/*input {
   display: block;
-}
+}*/
 
 @media screen and (max-width: 850px) {
   section.home {
@@ -142,4 +142,8 @@ footer > a {
     width: 80%;
     margin-bottom: 10px;
   }
+}
+
+.required {
+  color: red;
 }

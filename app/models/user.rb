@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   has_many :animals, :foreign_key => :guardian_id
   has_many :follower_animals, :foreign_key => :follower_id
-  has_many :followed_animals, :through => :follower_animals, :source => :animal
+  has_many :followed_animals, :through => :follower_animals
 
   validates :email, :hashed_password, :zip_code, presence: true
   validates :email, uniqueness: true
