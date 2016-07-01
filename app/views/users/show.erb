@@ -5,6 +5,15 @@
     <input type='submit' value="Add Animal">
   </form>
 
+  <% if @user.animals_in_need.length != 0 %>
+    <section class="your-animals">
+      <h2>Animals Who Need Help</h2>
+      <% @user.animals_in_need.each do |animal| %>
+      <%= erb :'animals/_animal', { layout: false, locals: {:animal => animal }} %>
+      <% end %>
+    </section>
+  <% end %>
+
   <section class="your-animals">
     <h2>Your Animals</h2>
     <% @user.animals.each do |animal| %>

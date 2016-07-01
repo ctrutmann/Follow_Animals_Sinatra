@@ -101,15 +101,17 @@ form.login > input {
   border: 1px solid black;
 }
 
-.about {
-    background: white;
-    padding: 1%;
+section.about {
+  background: white;
+  padding: 3%;
 }
 
 article.about {
   display: inline-block;
   position: relative;
-  width: 40%;
+  margin-left: 4%;
+  padding: 3%;
+  width: 35%;
 }
 
 img.about {
@@ -117,7 +119,7 @@ img.about {
   display: inline-block;
   position: relative;
   width: 50%;
-  margin-left: 5%;
+  margin-left: 4%;
 }
 
 footer {

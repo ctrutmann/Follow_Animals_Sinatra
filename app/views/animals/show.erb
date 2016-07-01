@@ -1,1 +1,28 @@
-show.erb
+<section class="about">
+  <article class="about">
+    <h1><%= @animal.name %></h1>
+    <p>Status: <span class="status"><%= @animal.status.status %></span></p>
+
+    <% if current_user == @animal.guardian %>
+      <form action="/animals/edit" method="GET">
+      <input type='submit' value="Edit <%= @animal.name %>'s Information">
+      </form>
+    <% end %>
+
+    <% if @animal.old_names.length > 0 %>
+      <p>Previous Names:</p>
+      <ul>
+        <% @animal.old_names.each do |name| %>
+          <li><%= name %></li>
+        <% end %>
+      </ul>
+    <% end %>
+    <p>Species: <%= @animal.species %></p>
+    <p>Breed: <%= @animal.breed %></p>
+    <p>Age: <%= @animal.age %></p>
+    <p>Location: <%= @animal.zip_code %></p>
+
+    <!-- Contact current owner. -->
+  </article>
+  <img class="about" src="/animal_images/Huck_golden.jpg">
+</section>
